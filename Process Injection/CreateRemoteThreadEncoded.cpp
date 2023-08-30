@@ -1,3 +1,4 @@
+// accompanied blogpost https://captmeelo.com/redteam/maldev/2021/12/15/lazy-maldev.html
 #include <Windows.h>
 #include "include/aes.hpp"
 #include "include/lazy_importer.hpp"

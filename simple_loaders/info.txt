@@ -1,0 +1,25 @@
+## Steps
+1. Create a shellcode
+2. Encrypte shellcode
+3. Make shellcode nasm compatible
+4. Add shellcode to nasm data
+5. Compile
+
+## Shellcode 
+After you create the shellcode run the below command to make it Masm compatible
+
+hexdump -v -e '1/2 "dw 0%.4xh\n"' <input_file> | tee <output_file>
+
+
+## Compile option 
+
+C/C++ Code Generation: 
+    - Runtime Library [MT]
+    - Security Checks [GS-]
+
+Linker Debugging:
+    - Generate Debug Info [No]
+
+Linker Advanced:
+    - Randomise Base Address [No]
+    - Data Execution Prevention [No]
